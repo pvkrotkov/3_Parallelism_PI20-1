@@ -44,7 +44,7 @@ def elements_Multiple_result(index, A, B):
         res += A[i][k] * B[k][j]
     return (res)
 
-def oper(que, m_cpu, num, que_b=False):
+def operation(que, m_cpu, num, que_b=False):
     if finish:
         if que_b:
             print(que_b)
@@ -75,7 +75,7 @@ while True:
         m_cpu = cpu_count()
 
         finish = True
-        final_res = oper(AB_table, m_cpu, 'From table', False)
+        final_res = operation(AB_table, m_cpu, 'From table', False)
         finish = True
         print('\033[32m\033[5mРезультат умеожения: \033[0m')
         for i in range(len(final_res)):
